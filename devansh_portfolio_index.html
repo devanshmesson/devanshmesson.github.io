@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Devansh Messon – Software Engineer Portfolio</title>
+  <meta name="description" content="Devansh Messon – Full‑Stack Software Engineer. Angular, ASP.NET Core, Azure, Generative AI. Competitive programmer & published researcher." />
+  <meta name="keywords" content="Devansh Messon, Software Engineer, Full Stack, Angular, ASP.NET Core, Azure, Generative AI, Portfolio, SDE" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { inter: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            ink: {
+              50: '#f6f7f9',
+              100: '#eceef2',
+              200: '#d6dbe5',
+              300: '#b4bdcd',
+              400: '#8797ac',
+              500: '#6d7f97',
+              600: '#56667d',
+              700: '#455265',
+              800: '#3a4453',
+              900: '#232a36'
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,.06)'
+          }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .container-xl { max-width: 1100px; }
+    .glass { backdrop-filter: saturate(180%) blur(10px); background: rgba(255,255,255,0.7); }
+    .dark .glass { background: rgba(20,24,31,0.6); }
+  </style>
+</head>
+<body class="font-inter text-ink-800 dark:text-ink-100 bg-ink-50 dark:bg-ink-900">
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50">
+    <div class="glass shadow-soft">
+      <nav class="container container-xl mx-auto flex items-center justify-between px-4 py-3">
+        <a href="#home" class="text-lg font-extrabold tracking-tight">DM</a>
+        <div class="hidden md:flex gap-6 text-sm">
+          <a href="#about" class="hover:opacity-80">About</a>
+          <a href="#experience" class="hover:opacity-80">Experience</a>
+          <a href="#projects" class="hover:opacity-80">Projects</a>
+          <a href="#skills" class="hover:opacity-80">Skills</a>
+          <a href="#achievements" class="hover:opacity-80">Achievements</a>
+          <a href="#publications" class="hover:opacity-80">Publications</a>
+          <a href="#contact" class="hover:opacity-80">Contact</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="https://github.com/devanshmesson" target="_blank" rel="noreferrer" class="text-sm px-3 py-1.5 rounded-full bg-ink-900 text-white dark:bg-white dark:text-ink-900 hover:opacity-90">GitHub</a>
+          <button id="themeToggle" aria-label="Toggle dark mode" class="rounded-full border border-ink-200 dark:border-ink-700 w-10 h-10 flex items-center justify-center">
+            <span id="themeIcon" class="text-xl">🌙</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="container container-xl mx-auto px-4 pt-16 pb-10">
+    <div class="grid md:grid-cols-12 gap-8 items-center">
+      <div class="md:col-span-7">
+        <p class="uppercase tracking-widest text-xs text-ink-500 dark:text-ink-300">Software Development Engineer</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mt-3">Hi, I'm <span class="text-ink-900 dark:text-white">Devansh Messon</span>.</h1>
+        <p class="mt-5 text-ink-700 dark:text-ink-200 text-lg max-w-2xl">I build scalable systems and intelligent apps. Currently SDE L2 at Kongsberg Digital (Bengaluru) crafting high‑performance APIs, real‑time analytics, and modern frontends. Competitive programmer and published researcher.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <!-- Tip: Place your resume file as ./resume.pdf in the same folder as index.html -->
+          <a href="resume.pdf" class="px-5 py-2.5 rounded-xl bg-ink-900 text-white dark:bg-white dark:text-ink-900 shadow-soft">Download Resume</a>
+          <a href="mailto:messondevansh1@gmail.com" class="px-5 py-2.5 rounded-xl border border-ink-300 dark:border-ink-600">Email Me</a>
+          <a href="https://linkedin.com/in/devanshmesson" target="_blank" class="px-5 py-2.5 rounded-xl border border-ink-300 dark:border-ink-600">LinkedIn</a>
+        </div>
+      </div>
+      <div class="md:col-span-5">
+        <div class="rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-5 border border-ink-100 dark:border-ink-700">
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-ink-100 to-ink-200 dark:from-ink-700 dark:to-ink-800 flex items-center justify-center text-5xl">🧑‍💻</div>
+          <div class="mt-4 grid grid-cols-3 text-center">
+            <div>
+              <div class="text-2xl font-bold">2+ yrs</div>
+              <div class="text-xs opacity-70">Industry exp.</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold">400+</div>
+              <div class="text-xs opacity-70">DSA problems</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold">4★</div>
+              <div class="text-xs opacity-70">CodeChef</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container container-xl mx-auto px-4 py-12">
+    <div class="rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-8 border border-ink-100 dark:border-ink-700">
+      <h2 class="text-2xl font-bold">About</h2>
+      <p class="mt-4 text-ink-700 dark:text-ink-200">I’m a Full‑Stack Engineer with a focus on performance, developer experience, and clean architecture. I’ve shipped scalable REST APIs, serverless data pipelines, and responsive web apps. I enjoy solving tough problems—whether that’s bringing a 44s API down to sub‑second or designing a multi‑tenant event platform that handles hundreds of concurrent users.</p>
+      <ul class="mt-4 text-ink-700 dark:text-ink-200 list-disc pl-6">
+        <li><span class="font-medium">Education:</span> B.Tech, Computer Science (CGPA 8.35/10), UPES, Dehradun (2018–2022)</li>
+        <li><span class="font-medium">Location:</span> Bengaluru, India</li>
+        <li><span class="font-medium">Open to:</span> SDE roles (Full‑Stack / Backend), product‑driven teams, high‑impact systems</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="container container-xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-6">Experience</h2>
+    <div class="space-y-6">
+      <article class="rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-6 border border-ink-100 dark:border-ink-700">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h3 class="text-xl font-semibold">Software Development Engineer L2 – Kongsberg Digital</h3>
+            <p class="text-sm text-ink-600 dark:text-ink-300">Bangalore • Jul 2022 – Present</p>
+          </div>
+          <span class="text-xs px-3 py-1 rounded-full bg-ink-900 text-white dark:bg-white dark:text-ink-900">Angular • .NET • Azure</span>
+        </div>
+        <ul class="mt-4 space-y-2 text-ink-700 dark:text-ink-200 list-disc pl-6">
+          <li>Cut bundle size by <span class="font-semibold">40%</span> using lazy‑loaded Angular modules (dynamic imports, tree‑shaking).</li>
+          <li>Developed scalable RESTful APIs (CQRS) handling <span class="font-semibold">2.5k+ maritime sensor streams</span> via ASP.NET Core, EF Core, SQL Server; ensured data integrity.</li>
+          <li>Improved API performance by <span class="font-semibold">98%</span> (<span class="font-mono">44s → 0.9s</span>) through caching, query optimization, and request minimization.</li>
+          <li>Delivered real‑time analytics for 15+ sensor types with an event‑driven ETL on <span class="font-semibold">Azure Functions</span> for multi‑tenant maritime data.</li>
+          <li><span class="text-sm opacity-70">Stack:</span> Angular 15, ASP.NET Core 8, C#, EF Core, SQL Server, Azure Functions, Git, Agile</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container container-xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-6">Featured Projects</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Project Card 1 -->
+      <article class="rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-6 border border-ink-100 dark:border-ink-700">
+        <div class="flex items-start justify-between">
+          <h3 class="text-xl font-semibold">Grid Intelligence AI Assistant</h3>
+          <span class="text-xs px-2 py-1 rounded-full border border-ink-200 dark:border-ink-600">Hackathon Finalist · 2024</span>
+        </div>
+        <p class="mt-3 text-ink-700 dark:text-ink-200">A GenAI ReAct agent with custom tools enabling natural‑language querying over 10K+ electrical grid records. Integrated LLaMA3‑70B via ChatGroq with smart tool routing and memory for multi‑turn analysis.</p>
+        <ul class="mt-3 space-y-1 list-disc pl-6 text-ink-700 dark:text-ink-200">
+          <li>Prompt templates mapping queries → structured JSON API params at <span class="font-semibold">95% accuracy</span>.</li>
+          <li>Reduced grid analysis from hours to seconds.</li>
+        </ul>
+        <p class="mt-3 text-sm opacity-80">Python • LangChain • ReAct • ChatGroq/LLaMA3 • Prompt Engineering</p>
+        <div class="mt-4 flex gap-3">
+          <a href="#" class="text-sm px-3 py-1.5 rounded-lg border border-ink-300 dark:border-ink-600">Repo</a>
+          <a href="#" class="text-sm px-3 py-1.5 rounded-lg border border-ink-300 dark:border-ink-600">Live Demo</a>
+        </div>
+      </article>
+
+      <!-- Project Card 2 -->
+      <article class="rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-6 border border-ink-100 dark:border-ink-700">
+        <div class="flex items-start justify-between">
+          <h3 class="text-xl font-semibold">Event Management Platform</h3>
+          <span class="text-xs px-2 py-1 rounded-full border border-ink-200 dark:border-ink-600">Problem Solving Challenge · 2023</span>
+        </div>
+        <p class="mt-3 text-ink-700 dark:text-ink-200">Platform for 10K+ employees across 5 departments with real‑time QR attendance, sub‑second latency for 500+ concurrent users, and live analytics dashboards.</p>
+        <ul class="mt-3 space-y-1 list-disc pl-6 text-ink-700 dark:text-ink-200">
+          <li>PBKDF2 (10K iterations) + JWT auth; responsive UI/UX with Figma designs.</li>
+          <li>17 REST APIs; optimized scalability via Azure Cosmos DB partitioning.</li>
+        </ul>
+        <p class="mt-3 text-sm opacity-80">Angular 14 • ASP.NET Core 6 • Azure Cosmos DB • D3.js • EF Core • Figma</p>
+        <div class="mt-4 flex gap-3">
+          <a href="#" class="text-sm px-3 py-1.5 rounded-lg border border-ink-300 dark:border-ink-600">Repo</a>
+          <a href="#" class="text-sm px-3 py-1.5 rounded-lg border border-ink-300 dark:border-ink-600">Live Demo</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- More Projects note -->
+    <div class="mt-6 text-sm text-ink-600 dark:text-ink-300">More projects & open‑source at <a class="underline" href="https://github.com/devanshmesson" target="_blank" rel="noreferrer">github.com/devanshmesson</a>.</div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container container-xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-6">Skills</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-6 border border-ink-100 dark:border-ink-700">
+        <h3 class="font-semibold">Frontend</h3>
+        <p class="mt-2 text-ink-700 dark:text-ink-200">Angular, JavaScript, HTML, CSS, D3.js, Responsive UI</p>
+      </div>
+      <div class="rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-6 border border-ink-100 dark:border-ink-700">
+        <h3 class="font-semibold">Backend</h3>
+        <p class="mt-2 text-ink-700 dark:text-ink-200">ASP.NET Core, C#, RESTful APIs, Microservices, CQRS, EF Core, SQL Server</p>
+      </div>
+      <div class="rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-6 border border-ink-100 dark:border-ink-700">
+        <h3 class="font-semibold">Cloud & DevOps</h3>
+        <p class="mt-2 text-ink-700 dark:text-ink-200">Azure Functions, Azure Cosmos DB, Git, CI/CD, Agile, App Insights, SonarQube</p>
+      </div>
+      <div class="rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-6 border border-ink-100 dark:border-ink-700">
+        <h3 class="font-semibold">AI & Other</h3>
+        <p class="mt-2 text-ink-700 dark:text-ink-200">Generative AI (LangChain), Python, Computer Vision (YOLOv5, OpenCV), DSA</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="container container-xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-6">Competitive Programming & Awards</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-6 border border-ink-100 dark:border-ink-700">
+        <h3 class="font-semibold">Competitive Coding</h3>
+        <ul class="mt-2 space-y-1 list-disc pl-6 text-ink-700 dark:text-ink-200">
+          <li>Rank <span class="font-semibold">1/11K</span> in Cocubes DCT 2021</li>
+          <li>CodeChef April Lunchtime 2021 Div. 2: <span class="font-semibold">509/4K</span></li>
+          <li>Codeforces Round #695 Div. 2: <span class="font-semibold">3,419/19K</span></li>
+          <li>Google Kickstart Round D 2020: <span class="font-semibold">4,530/8K</span></li>
+          <li>Codeforces Round #633 Div. 2: <span class="font-semibold">5,934/23K</span></li>
+          <li>400+ problems solved; CodeChef <span class="font-semibold">4★ (highest)</span></li>
+        </ul>
+      </div>
+      <div class="rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-6 border border-ink-100 dark:border-ink-700">
+        <h3 class="font-semibold">Hackathons</h3>
+        <ul class="mt-2 space-y-1 list-disc pl-6 text-ink-700 dark:text-ink-200">
+          <li>UPES‑CSI Hackathon 4.0 – First Runner‑up</li>
+          <li>UPES‑CSI Hackathon 3.0 – Finalist</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="container container-xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-6">Publications</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <a href="https://ieeexplore.ieee.org/document/9397200" target="_blank" class="block rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-6 border border-ink-100 dark:border-ink-700">
+        <h3 class="font-semibold">Comparative Study Of Various Approaches Of Dijkstra Algorithm</h3>
+        <p class="mt-2 text-sm text-ink-600 dark:text-ink-300">IEEE ICCCIS‑2021</p>
+      </a>
+      <a href="https://link.springer.com/chapter/10.1007/978-981-19-0619-0_48" target="_blank" class="block rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-6 border border-ink-100 dark:border-ink-700">
+        <h3 class="font-semibold">Comparative Study of Time Optimization Algorithms for TSP</h3>
+        <p class="mt-2 text-sm text-ink-600 dark:text-ink-300">ICFIRTP‑2020 (Springer)</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container container-xl mx-auto px-4 py-12">
+    <div class="rounded-3xl bg-white dark:bg-ink-800 shadow-soft p-8 border border-ink-100 dark:border-ink-700">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <p class="mt-2 text-ink-700 dark:text-ink-200">Have an opportunity or just want to say hi? Reach me here:</p>
+      <div class="mt-5 grid md:grid-cols-3 gap-4">
+        <a href="mailto:messondevansh1@gmail.com" class="block p-4 rounded-2xl border border-ink-200 dark:border-ink-700 hover:bg-ink-50 dark:hover:bg-ink-700">📮 Email</a>
+        <a href="https://linkedin.com/in/devanshmesson" target="_blank" class="block p-4 rounded-2xl border border-ink-200 dark:border-ink-700 hover:bg-ink-50 dark:hover:bg-ink-700">💼 LinkedIn</a>
+        <a href="https://www.codechef.com/users/zephxr" target="_blank" class="block p-4 rounded-2xl border border-ink-200 dark:border-ink-700 hover:bg-ink-50 dark:hover:bg-ink-700">🍽️ CodeChef</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-ink-200 dark:border-ink-700 py-8 mt-10">
+    <div class="container container-xl mx-auto px-4 text-sm flex flex-wrap items-center justify-between gap-3">
+      <p>© <span id="year"></span> Devansh Messon</p>
+      <div class="flex gap-4">
+        <a class="underline" href="https://github.com/devanshmesson" target="_blank">GitHub</a>
+        <a class="underline" href="https://linkedin.com/in/devanshmesson" target="_blank">LinkedIn</a>
+        <a class="underline" href="https://ieeexplore.ieee.org/document/9397200" target="_blank">IEEE</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dark Mode toggle with persistence
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+
+    const setTheme = (isDark) => {
+      if (isDark) {
+        root.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        themeIcon.textContent = '☀️';
+      } else {
+        root.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        themeIcon.textContent = '🌙';
+      }
+    };
+
+    setTheme(localStorage.getItem('theme') === 'dark');
+
+    themeToggle.addEventListener('click', () => {
+      const nowDark = !root.classList.contains('dark');
+      setTheme(nowDark);
+    });
+
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
